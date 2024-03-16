@@ -15,6 +15,8 @@ export function Home() {
 
   return (
     <>
+
+      <h1>Doguito</h1>
       <BreedSelector onSelect={handleBreedSelect}/>
       <FormDog/>
       <DogImage breed={selectedBreed}/>
