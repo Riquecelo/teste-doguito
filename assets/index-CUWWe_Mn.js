@@ -109,6 +109,10 @@ Error generating stack: `+o.message+`
 
     background-color: ${({theme:e})=>e.COLORS.BACKGROUND_BLACK};
 
+    @media (max-width: 768px) {
+            height: 100%;
+        }
+
 `,Wv=Fe.header`
 
     height: 100px;
@@ -129,6 +133,9 @@ Error generating stack: `+o.message+`
         color : ${({theme:e})=>e.COLORS.ORANGE}
     }
 
+    @media (max-width: 425px) {
+            flex-direction: column;
+        }
 `,Vv=Fe.section`
 
     width: 100%;
@@ -160,6 +167,9 @@ Error generating stack: `+o.message+`
         
         background: url(${Uv}) no-repeat center center;
         background-size: contain;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 `,Hv=Fe.footer`
     height: 10%;
@@ -187,6 +197,10 @@ Error generating stack: `+o.message+`
         color: ${({theme:e})=>e.COLORS.BACKGROUND_900};
         background: ${({theme:e})=>e.COLORS.ORANGE};
     }
+    @media (max-width: 768px) {
+            position: absolute;
+            bottom: 0;
+        }
 `,Gv=Fe.div`
 
     max-width: 250px;
@@ -236,6 +250,22 @@ Error generating stack: `+o.message+`
         border-radius: 40px;
         position: absolute;
     }
+
+    @media (max-width: 425px) {
+
+            img{
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: 20%;
+                border-radius: 10px;
+            }
+            img::before{
+                width: 90px;
+                height: 90px;
+                border-radius: 10px;
+            }
+        }
 `,Yv=({breed:e})=>{const[t,n]=_.useState("");return _.useEffect(()=>{fetch(`https://dog.ceo/api/breed/${e}/images/random`).then(r=>r.json()).then(r=>{n(r.message)})},[e]),localStorage.setItem("imgUrl",t),localStorage.setItem("breed",e),R.jsx(Qv,{children:t&&R.jsx("img",{src:t,alt:e})})},Xv=Fe.div`
 
     width: 100%;
@@ -370,6 +400,12 @@ Error generating stack: `+o.message+`
             font-size: 20px;
             font-weight:bold;
         }
+    }
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 20px;
     }
 
 `;function rg(){const e=localStorage.getItem("imgUrl"),t=localStorage.getItem("color"),n=localStorage.getItem("size"),r=localStorage.getItem("nickname"),l=localStorage.getItem("age"),o=localStorage.getItem("breed");return R.jsxs(eg,{children:[R.jsxs(tg,{children:[R.jsx(Xd,{to:"/teste-doguito/",children:R.jsx("button",{children:R.jsx(Fv,{size:40})})}),R.jsxs("h1",{children:[R.jsx(qd,{})," Doguito"]})]}),R.jsxs(ng,{children:[R.jsx("img",{src:e,alt:""}),R.jsxs("div",{className:"info",children:[R.jsx("h2",{children:"Informações do seu doguito."}),R.jsxs("ul",{children:[R.jsxs("li",{children:["Raça: ",o]}),R.jsxs("li",{children:["Nome: ",r]}),R.jsxs("li",{children:["Cor: ",t]}),R.jsxs("li",{children:["Tamanho: ",n]}),R.jsxs("li",{children:["Idade: ",l]})]})]})]})]})}function lg(){return R.jsxs(Sv,{children:[R.jsx(mu,{path:"/teste-doguito/",element:R.jsx(bv,{})}),R.jsx(mu,{path:"/teste-doguito/new",element:R.jsx(rg,{})})]})}function og(){return R.jsx(Ov,{children:R.jsx(lg,{})})}di.createRoot(document.getElementById("root")).render(R.jsx(b.StrictMode,{children:R.jsxs(_0,{theme:L0,children:[R.jsx(N0,{}),R.jsx(og,{})]})}));
