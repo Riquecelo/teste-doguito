@@ -14,16 +14,16 @@ export const Container = styled.div`
         width: 200px;
         height: 200px;
         position: relative;
-        border-radius: 50%;
+        border: 1px solid black;
+        border-radius: 40px;
     } 
     >img::before{
         content: "";
-        width: 205px;
-        height: 205px;
+        width: 200px;
+        height: 200px;
         background: ${({theme}) => theme.COLORS.BACKGROUND_700};
         display: block;
-        border-radius: 50%;
+        border-radius: 40px;
         position: absolute;
-
     }
 `;

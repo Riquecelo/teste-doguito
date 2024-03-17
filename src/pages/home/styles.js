@@ -4,9 +4,11 @@ import url from "../../assets/dog-black.jpg"
 export const Container  = styled.div`
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
 
@@ -37,26 +39,31 @@ export const Header = styled.header`
 export const Section = styled.section`
 
     width: 100%;
-    height: 70%;
+    height: 100%;
+    max-height: 70%;
     padding: 0 10%;
     display: flex;
+    justify-content: space-between;
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
 
     .container-left{
         height: 100%;
-        max-width: 500px;
+        width: 100%;
+        max-width: 700px;
 
         padding-top: 10px;
 
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
     }
 
     .container-img{
         height: 100%;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         
         background: url(${url}) no-repeat center center;
         background-size: contain;
