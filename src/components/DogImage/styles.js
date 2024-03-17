@@ -26,4 +26,20 @@ export const Container = styled.div`
         border-radius: 40px;
         position: absolute;
     }
+
+    @media (max-width: 425px) {
+
+            img{
+                width: 90px;
+                height: 90px;
+                position: absolute;
+                top: 20%;
+                border-radius: 10px;
+            }
+            img::before{
+                width: 90px;
+                height: 90px;
+                border-radius: 10px;
+            }
+        }
 `;

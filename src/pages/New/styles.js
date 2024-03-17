@@ -85,4 +85,10 @@ export const Section = styled.section`
         }
     }
 
+    @media (max-width: 425px) {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 20px;
+    }
+
 `;

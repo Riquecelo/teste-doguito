@@ -12,6 +12,10 @@ export const Container  = styled.div`
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
 
+    @media (max-width: 768px) {
+            height: 100%;
+        }
+
 `;
 
 export const Header = styled.header`
@@ -34,6 +38,9 @@ export const Header = styled.header`
         color : ${({theme}) => theme.COLORS.ORANGE}
     }
 
+    @media (max-width: 425px) {
+            flex-direction: column;
+        }
 `;
 
 export const Section = styled.section`
@@ -67,6 +74,9 @@ export const Section = styled.section`
         
         background: url(${url}) no-repeat center center;
         background-size: contain;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 `;
 
@@ -96,4 +106,8 @@ export const Footer = styled.footer`
         color: ${({theme}) => theme.COLORS.BACKGROUND_900};
         background: ${({theme}) => theme.COLORS.ORANGE};
     }
+    @media (max-width: 768px) {
+            position: absolute;
+            bottom: 0;
+        }
 `;
