@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Container } from "./styles";
 
 export function FormDog(){
 
@@ -16,28 +17,30 @@ export function FormDog(){
     }
 
     return(
-        <>
-            <div>
+        <Container>
+            
                 <form onSubmit={handleSubmit}>
                     <label>
-                        Color:
+                        Cor:
                         <input type="text" value={color} onChange={(e) => setColor(e.target.value)} />
                     </label>
                     <label>
-                        Size:
+                        Tamanho:
                         <input type="text" value={size} onChange={(e) => setSize(e.target.value)} />
                     </label>
                     <label>
-                        Nickname:
+                        Nome:
                         <input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} />
                     </label>
                     <label>
-                        Age:
+                        Idade:
                         <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
                     </label>
-                    <button type="submit">Salvar</button>
+                    <button type="submit">
+                        Salvar
+                    </button>
                 </form>
-            </div>
-        </>
+            
+        </Container>
     )
 }
