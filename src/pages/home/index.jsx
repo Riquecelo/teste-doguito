@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoPawSharp } from "react-icons/io5";
-import { Container, Header, Section, Footer } from './styles'
+import { Container, Header, Section, Footer } from './styles';
+import { IoArrowRedoSharp } from "react-icons/io5";
 
 import { BreedSelector } from "../../components/BreedSelector";
 import { DogImage } from "../../components/DogImage";
@@ -37,6 +38,7 @@ export function Home() {
       <Link to="/teste-doguito/new">
         <button type="button" >
             visualizar
+            <IoArrowRedoSharp />
         </button>
       </Link>
       </Footer>

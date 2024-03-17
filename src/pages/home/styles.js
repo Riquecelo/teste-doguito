@@ -72,4 +72,21 @@ export const Footer = styled.footer`
     justify-content: center;
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
+
+    >a button{
+        width: 200px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-transform: uppercase;
+        font-weight: bold;
+
+        color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        background: ${({theme}) => theme.COLORS.ORANGE};
+    }
 `;
