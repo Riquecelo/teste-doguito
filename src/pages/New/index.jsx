@@ -10,6 +10,7 @@ export function New(){
     const size = localStorage.getItem('size')
     const nickname = localStorage.getItem('nickname')
     const age = localStorage.getItem('age')
+    const breed = localStorage.getItem('breed')
 
     
     return(
@@ -29,6 +30,7 @@ export function New(){
                 <div className="info">
                     <h2>Informações do seu doguito.</h2>
                     <ul>
+                        <li>Raça: {breed}</li>
                         <li>Nome: {nickname}</li>
                         <li>Cor: {cor}</li>
                         <li>Tamanho: {size}</li>

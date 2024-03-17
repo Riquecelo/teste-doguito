@@ -13,6 +13,7 @@ export const DogImage = ({ breed }) => {
         });
     }, [breed]);
     localStorage.setItem('imgUrl', imageUrl)
+    localStorage.setItem('breed', breed)
 
     return (
         <Container>
