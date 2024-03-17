@@ -19,23 +19,23 @@ export function FormDog(){
         <>
             <div>
                 <form onSubmit={handleSubmit}>
-                <label>
-                    Color:
-                    <input type="text" value={color} onChange={(e) => setColor(e.target.value)} />
-                </label>
-                <label>
-                    Size:
-                    <input type="text" value={size} onChange={(e) => setSize(e.target.value)} />
-                </label>
-                <label>
-                    Nickname:
-                    <input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} />
-                </label>
-                <label>
-                    Age:
-                    <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
-                </label>
-                <button type="submit">Salvar</button>
+                    <label>
+                        Color:
+                        <input type="text" value={color} onChange={(e) => setColor(e.target.value)} />
+                    </label>
+                    <label>
+                        Size:
+                        <input type="text" value={size} onChange={(e) => setSize(e.target.value)} />
+                    </label>
+                    <label>
+                        Nickname:
+                        <input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} />
+                    </label>
+                    <label>
+                        Age:
+                        <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
+                    </label>
+                    <button type="submit">Salvar</button>
                 </form>
             </div>
         </>

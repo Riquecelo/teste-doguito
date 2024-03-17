@@ -13,10 +13,10 @@ export const BreedSelector = ({ onSelect }) => {
 
     return (
         <select onChange={(e) => onSelect(e.target.value)}>
-        <option value="">Select a breed</option>
-        {breeds.map(breed => (
-            <option key={breed} value={breed}>{breed}</option>
-        ))}
+            <option value="">Select a breed</option>
+            {breeds.map(breed => (
+                <option key={breed} value={breed}>{breed}</option>
+            ))}
         </select>
     );
 };
