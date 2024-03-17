@@ -28,6 +28,10 @@ export const Header = styled.header`
     border-bottom-style: solid;
     border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
 
+    > h1{
+        color : ${({theme}) => theme.COLORS.ORANGE}
+    }
+
 `;
 
 export const Section = styled.section`

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoPawSharp } from "react-icons/io5";
 import { Container, Header, Section, Footer } from './styles'
 
 import { BreedSelector } from "../../components/BreedSelector";
@@ -18,7 +19,8 @@ export function Home() {
     <Container>
       
       <Header>
-        <h1>Doguito</h1>
+        
+        <h1><IoPawSharp /> Doguito</h1>
         <BreedSelector onSelect={handleBreedSelect}/>
       </Header>
       
