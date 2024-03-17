@@ -13,7 +13,7 @@ link deploy: https://riquecelo.github.io/teste-doguito/
 |O que foi feito||
 |--|--|
 |consumo de API||
-|cria uma lista de raças fornecida pela API||
+|criar uma lista de raças fornecida pela API||
 |exibir imagem depois de selecionar raça||
 |fazer um cadastro com inforções do dog||
 |exibir as informações salvas em uma nova página||
