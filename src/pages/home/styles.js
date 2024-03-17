@@ -46,6 +46,11 @@ export const Section = styled.section`
     .container-left{
         height: 100%;
         max-width: 500px;
+
+        padding-top: 10px;
+
+        display: flex;
+        flex-direction: column;
         background-color: ${({theme}) => theme.COLORS.BACKGROUND_BLACK};
     }
 

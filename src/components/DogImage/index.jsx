@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { Container } from "./styles";
+
 export const DogImage = ({ breed }) => {
     const [imageUrl, setImageUrl] = useState("");
 
@@ -12,5 +14,9 @@ export const DogImage = ({ breed }) => {
     }, [breed]);
     localStorage.setItem('imgUrl', imageUrl)
 
-    return <div>{imageUrl && <img src={imageUrl} alt={breed} />}</div>;
+    return (
+        <Container>
+            {imageUrl && <img src={imageUrl} alt={breed} />}
+        </Container>
+    )
 };

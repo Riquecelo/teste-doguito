@@ -15,7 +15,7 @@ export const BreedSelector = ({ onSelect }) => {
     return (
         <Container>
         <select onChange={(e) => onSelect(e.target.value)}>
-            <option value="">Selecione a raça do seu doguito</option>
+            <option value="" disabled selected>Selecione a raça do seu doguito</option>
             {breeds.map(breed => (
                 <option key={breed} value={breed}>{breed}</option>
             ))}
