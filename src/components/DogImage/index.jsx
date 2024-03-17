@@ -10,6 +10,7 @@ export const DogImage = ({ breed }) => {
             setImageUrl(data.message);
         });
     }, [breed]);
+    localStorage.setItem('imgUrl', imageUrl)
 
     return <div>{imageUrl && <img src={imageUrl} alt={breed} />}</div>;
 };
