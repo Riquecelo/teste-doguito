@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container } from "./styles";
+import { Titlulo } from '../../components/Titulo';
 
 export function FormDog(){
 
@@ -18,7 +19,7 @@ export function FormDog(){
 
     return(
         <Container>
-            
+            <Titlulo text="Cadastre seu doguito" />
                 <form onSubmit={handleSubmit}>
                     <label>
                         Cor:

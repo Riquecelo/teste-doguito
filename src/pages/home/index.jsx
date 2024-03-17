@@ -8,6 +8,7 @@ import { DogImage } from "../../components/DogImage";
 import { FormDog } from '../../components/FormDog';
 import { Link } from 'react-router-dom';
 
+
 export function Home() {
 
   const [selectedBreed, setSelectedBreed] = useState('');
@@ -26,6 +27,7 @@ export function Home() {
       </Header>
       
       <Section>
+          
         <div className='container-left'>
           <FormDog />
           <DogImage breed={selectedBreed}/>
