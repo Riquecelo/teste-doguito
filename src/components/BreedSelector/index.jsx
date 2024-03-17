@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container } from './styles'
 
 export const BreedSelector = ({ onSelect }) => {
     const [breeds, setBreeds] = useState([]);
@@ -12,12 +13,14 @@ export const BreedSelector = ({ onSelect }) => {
     }, []);
 
     return (
+        <Container>
         <select onChange={(e) => onSelect(e.target.value)}>
-            <option value="">Select a breed</option>
+            <option value="">Selecione a raça do seu doguito</option>
             {breeds.map(breed => (
                 <option key={breed} value={breed}>{breed}</option>
             ))}
         </select>
+        </Container>
     );
 };
 
