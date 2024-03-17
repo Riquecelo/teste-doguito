@@ -1,4 +1,4 @@
-export function Details(){
+export function New(){
     const url = localStorage.getItem('imgUrl')
     const dados = localStorage.getItem('dados')
 
